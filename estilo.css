@@ -1,0 +1,48 @@
+body {
+    background-image: url(imagem\ de\ fundo.jpg); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Faz com que a imagem cubra toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    height: 50vh; /* Garante que o corpo tenha a altura total da viewport */
+    margin: 20; /* Remove a margem padrão */
+    color: rgb(255, 255, 255); /* Altera a cor do texto para melhor contraste */
+}
+p {
+    font-size: 20px; /* Ajuste o tamanho conforme necessário */
+}
+ul {
+    list-style-type: square; /* Estilo dos marcadores */
+    padding: 20px;
+}
+li {
+    margin: 10px 0; /* Espaçamento entre itens */
+    font-size: 20px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.botao-piscante {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    animation: piscar 1s infinite; /* Animação para piscar */
+}
+
+@keyframes piscar {
+    0%, 100% {
+        opacity: 1; /* Totalmente visível */
+    }
+    50% {
+        opacity: 0; /* Invisível */
+    }
+}
